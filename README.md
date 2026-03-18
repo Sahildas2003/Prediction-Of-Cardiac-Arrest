@@ -64,3 +64,28 @@ python CardiacApp/app.py
 
 ## ⚠️ Note
 This model uses proxy labels based on clinical thresholds, which may lead to near-perfect performance. Real-world performance may vary due to noisy and incomplete clinical data.
+## 📊 Project Visualizations
+
+### 🔹 Confusion Matrix
+![Confusion Matrix](images/Confusion%20Matrix.png)
+
+### 🔹 Correlation Heatmap
+![Correlation Heatmap](images/Correlation%20Heatmap.png)
+
+### 🔹 Feature Importance
+![Feature Importance](images/Feature%20Importance.png)
+
+### 🔹 ROC Curve
+![ROC Curve](images/ROC%20Curve.png)
+
+### 🔹 Model Performance Comparison
+![Model Performance](images/Model%20Performance%20Comparison.png)
+
+### 🔹 Heart Rate Analysis
+![Heart Rate](images/Heart%20rate%20by%20Cardiac%20Arrest.png)
+
+### 🔹 Systolic Blood Pressure
+![Systolic BP](images/Systolic%20Bp%20By%20Cardiac%20Arrest%20Label.png)
+
+### 🔹 Map Visualization
+![Map](images/Map%20By%20Cardiac%20Arrest%20Label.png) 
