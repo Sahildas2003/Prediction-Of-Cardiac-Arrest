@@ -61,3 +61,6 @@ git clone https://github.com/Sahildas2003/Prediction-Of-Cardiac-Arrest.git
 cd Prediction-Of-Cardiac-Arrest
 pip install -r requirements.txt
 python CardiacApp/app.py
+
+## ⚠️ Note
+This model uses proxy labels based on clinical thresholds, which may lead to near-perfect performance. Real-world performance may vary due to noisy and incomplete clinical data.
