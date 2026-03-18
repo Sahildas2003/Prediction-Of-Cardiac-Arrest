@@ -1,56 +1,74 @@
-# 🚑 Cardiac Arrest Prediction in ICU Patients
+# 🏥 Cardiac Arrest Prediction in ICU Patients
 
 ## 📌 Overview
-This project builds an end-to-end machine learning system to predict cardiac arrest risk in ICU patients using the MIMIC-IV dataset. The goal is early detection to improve clinical decision-making and patient outcomes.
+This project builds a machine learning-based system to predict the risk of cardiac arrest in ICU patients using clinical data from the MIMIC-IV dataset. The goal is to assist early detection and improve clinical decision-making.
 
 ---
 
-## 🧠 Features
-- 40+ clinical features (vitals, labs, demographics)
-- Models Used:
-  - Random Forest (Primary)
+## 🚀 Features
+- 📊 Uses 40+ clinical features (vital signs, lab values)
+- 🤖 Machine Learning Models:
+  - Random Forest (Primary Model)
   - Logistic Regression (Baseline)
-- Optimized for high recall in critical healthcare scenarios
+- 🎯 Optimized for high recall (critical in healthcare)
+- 🌐 Flask-based web application for real-time prediction
+- 📄 Automated PDF report generation
+- ⚡ Instant patient risk prediction
 
 ---
 
-## 📊 Model Performance
+## 🧠 Model Performance
 
-### Random Forest
-- Accuracy: 1.00
-- Precision: 1.00
-- Recall: 1.00
-- F1-Score: 1.00
-- ROC-AUC: 1.00
+### 🔹 Random Forest
+- Accuracy: 1.00  
+- Precision: 1.00  
+- Recall: 1.00  
+- F1-Score: 1.00  
+- ROC-AUC: 1.00  
 
-### Logistic Regression
-- Accuracy: 0.99
-- Precision: 0.99
-- Recall: 0.99
-- F1-Score: 0.99
-
----
-
-## 📈 Key Insights
-- Mean Arterial Pressure (MAP) is the most important feature
-- Heart rate contributes significantly to predictions
-- Strong class separability observed in ROC curve and confusion matrix
+### 🔹 Logistic Regression
+- Accuracy: 0.99  
+- Precision: 0.99  
+- Recall: 0.99  
+- F1-Score: 0.99  
 
 ---
 
-## 📊 Visualizations
-- Confusion Matrix
-- ROC Curve
-- Feature Importance Plot
-- Correlation Heatmap
-- Boxplots of vital signs
+## 📊 Project Visualizations
+
+### 🔹 Confusion Matrix
+![Confusion Matrix](images/confusion_matrix.png)
+
+### 🔹 Correlation Heatmap
+![Correlation Heatmap](images/correlation_heatmap.png)
+
+### 🔹 Feature Importance
+![Feature Importance](images/feature_importance.png)
+
+### 🔹 ROC Curve
+![ROC Curve](images/roc_curve.png)
+
+### 🔹 Model Performance Comparison
+![Model Performance](images/model_performance_comparison.png)
+
+### 🔹 Heart Rate Analysis
+![Heart Rate](images/heart_rate.png)
+
+### 🔹 Systolic Blood Pressure
+![Systolic BP](images/systolic_bp.png)
+
+### 🔹 Map Visualization
+![Map](images/map.png)
 
 ---
 
-## 🌐 Web Application
-- Flask-based UI for real-time prediction
-- Input patient data → Get instant risk prediction
-- Automated PDF report generation
+## ⚙️ Tech Stack
+- Python 🐍  
+- Scikit-learn  
+- Pandas & NumPy  
+- Matplotlib & Seaborn  
+- Flask (Web App)  
+- ReportLab (PDF Generation)  
 
 ---
 
@@ -61,31 +79,3 @@ git clone https://github.com/Sahildas2003/Prediction-Of-Cardiac-Arrest.git
 cd Prediction-Of-Cardiac-Arrest
 pip install -r requirements.txt
 python CardiacApp/app.py
-
-## ⚠️ Note
-This model uses proxy labels based on clinical thresholds, which may lead to near-perfect performance. Real-world performance may vary due to noisy and incomplete clinical data.
-## 📊 Project Visualizations
-
-### 🔹 Confusion Matrix
-![Confusion Matrix](images/Confusion%20Matrix.png)
-
-### 🔹 Correlation Heatmap
-![Correlation Heatmap](images/Correlation%20Heatmap.png)
-
-### 🔹 Feature Importance
-![Feature Importance](images/Feature%20Importance.png)
-
-### 🔹 ROC Curve
-![ROC Curve](images/ROC%20Curve.png)
-
-### 🔹 Model Performance Comparison
-![Model Performance](images/Model%20Performance%20Comparison.png)
-
-### 🔹 Heart Rate Analysis
-![Heart Rate](images/Heart%20rate%20by%20Cardiac%20Arrest.png)
-
-### 🔹 Systolic Blood Pressure
-![Systolic BP](images/Systolic%20Bp%20By%20Cardiac%20Arrest%20Label.png)
-
-### 🔹 Map Visualization
-![Map](images/Map%20By%20Cardiac%20Arrest%20Label.png) 
